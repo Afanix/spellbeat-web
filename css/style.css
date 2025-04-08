@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  background: #000;
+  color: #f0f0f0;
+  font-family: 'Merriweather', serif;
+  line-height: 1.6;
+}
+html {
+  scroll-behavior: smooth;
+}
+h1, h2, h3, p {
+  margin: 0.5em 0;
+}
+h1.tagline {
+  font-weight: 700;
+  font-size: 2.2em;
+  text-align: center;
+}
+h2 {
+  font-weight: 700;
+  font-size: 1.5em;
+}
+h3.release-label {
+  font-weight: 400;
+  font-size: 1.1em;
+  color: #cccccc;
+  text-align: center;
+}
+.hero {
+  position: relative;
+  text-align: center;
+  padding: 100px 20px 60px;
+}
+.hero .logo {
+  max-width: 80%;
+  height: auto;
+  margin-bottom: 20px;
+}
+#release-info {
+  font-size: 1.3em;
+  margin-bottom: 0.5em;
+}
+.hero-links a {
+  color: #f0f0f0;
+  text-decoration: underline;
+  margin: 0 5px;
+}
+.hero-links a:hover {
+  color: #ffffff;
+}
+.social-icons {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.social-icons img {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+.scroll-down img {
+  width: 32px;
+  height: 32px;
+  opacity: 0.8;
+}
+.scroll-down img:hover {
+  opacity: 1.0;
+}
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(10px); }
+}
+.scroll-down img {
+  animation: bounce 2s infinite;
+}
+.feature-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 20px;
+  border-top: 1px solid #222;
+}
+.feature-section .text-block {
+  max-width: 600px;
+}
+.feature-section .media-block {
+  max-width: 600px;
+  margin: 20px 0;
+}
+.feature-section .media-block img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 2px solid #333;
+}
+@media (min-width: 800px) {
+  .feature-section {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .feature-section .text-block,
+  .feature-section .media-block {
+    flex: 0 0 48%;
+    max-width: none;
+  }
+  .feature-section:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+  .feature-section .media-block {
+    margin: 0;
+  }
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #888;
+}
+footer a { 
+  color: #888; 
+  text-decoration: none;
+}
+footer a:hover { 
+  color: #fff; 
+}
