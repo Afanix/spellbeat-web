@@ -4,10 +4,13 @@ body {
   color: #f0f0f0;
   font-family: 'Merriweather', serif;
   line-height: 1.6;
-  text-align: center;  /* Added: centers text on the entire body */
+  text-align: center;
 }
 html {
   scroll-behavior: smooth;
+  /* Firefox scrollbar styling */
+  scrollbar-width: thin;
+  scrollbar-color: #555 #333;
 }
 h1, h2, h3, p {
   margin: 0.5em 0;
@@ -20,7 +23,7 @@ h1.tagline {
 h2 {
   font-weight: 700;
   font-size: 1.5em;
-  text-align: center;  /* Added for centering headings */
+  text-align: center;
 }
 h3.release-label {
   font-weight: 400;
@@ -82,7 +85,7 @@ h3.release-label {
   align-items: center;
   padding: 60px 20px;
   border-top: 1px solid #222;
-  text-align: center;  /* Ensures feature section text is centered */
+  text-align: center;
 }
 .feature-section .text-block {
   max-width: 600px;
@@ -126,4 +129,20 @@ footer a {
 }
 footer a:hover {
   color: #fff;
+}
+
+/* Scrollbar styling for WebKit browsers (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-track {
+    background: #333;  /* Dark grey track */
+}
+::-webkit-scrollbar-thumb {
+    background-color: #555;  /* Dark grey thumb */
+    border-radius: 6px;
+    border: 3px solid #333;  /* Matches track color */
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #777;
 }
