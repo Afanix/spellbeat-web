@@ -4,6 +4,7 @@ body {
   color: #f0f0f0;
   font-family: 'Merriweather', serif;
   line-height: 1.6;
+  text-align: center;  /* Added: centers text on the entire body */
 }
 html {
   scroll-behavior: smooth;
@@ -19,6 +20,7 @@ h1.tagline {
 h2 {
   font-weight: 700;
   font-size: 1.5em;
+  text-align: center;  /* Added for centering headings */
 }
 h3.release-label {
   font-weight: 400;
@@ -80,6 +82,7 @@ h3.release-label {
   align-items: center;
   padding: 60px 20px;
   border-top: 1px solid #222;
+  text-align: center;  /* Ensures feature section text is centered */
 }
 .feature-section .text-block {
   max-width: 600px;
@@ -117,10 +120,10 @@ footer {
   padding: 20px;
   color: #888;
 }
-footer a { 
-  color: #888; 
+footer a {
+  color: #888;
   text-decoration: none;
 }
-footer a:hover { 
-  color: #fff; 
+footer a:hover {
+  color: #fff;
 }
