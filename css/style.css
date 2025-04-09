@@ -105,6 +105,14 @@ h3.release-label {
   position: relative;
   z-index: 2;
 }
+
+/* Container to center inner content with 315px side margins on 1920px screens */
+.inner-content,
+.footer-container {
+  max-width: 1290px; /* 1920 - (315 * 2) = 1290 */
+  margin: 0 auto;
+}
+
 /* Text Box style for feature section text blocks */
 .feature-section .text-block {
   background: rgba(15, 15, 15, 0.9);
@@ -154,11 +162,13 @@ h3.release-label {
   }
 }
 
-/* Separator Line at bottom of each feature section */
+/* Separator Line placed BELOW the entire inner-content */
 .separator {
   width: calc(100% - 40px);
   margin: 20px auto 0;
   border-bottom: 2px solid #ccc;
+  /* Force separator to take a full row */
+  flex: 0 0 100%;
 }
 
 /* Color Scheme for Text Blocks */
@@ -169,7 +179,7 @@ h3.release-label {
   color: #f6d2af;
 }
 
-/* Highlight Classes for text parts */
+/* Highlight Classes */
 .highlight-blue {
   color: #2eb9ff;
   font-weight: 800;
@@ -187,6 +197,10 @@ footer {
   font-family: 'Montserrat', sans-serif;
   position: relative;
   background: #000;
+}
+.footer-container {
+  max-width: 1290px;
+  margin: 0 auto;
 }
 .footer-social {
   position: absolute;
